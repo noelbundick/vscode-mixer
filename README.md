@@ -3,6 +3,8 @@
 This is a sample extension that shows how it's possible to dynamically create buttons in a [Mixer](https://mixer.com/) stream based on interesting events inside VS Code.
 It opens up the opportunity for viewers of a programming live stream to interact directly with the editor
 
+![VS Code linked to a Mixer channel](docs/screenshot.jpg "VS Code linked to a Mixer channel")
+
 For example, you could allow viewers to spend sparks to activate [Power Mode](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-power-mode) for a limited amount of time!
 
 ## Proof of Concept
