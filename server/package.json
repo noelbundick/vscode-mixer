@@ -1,0 +1,27 @@
+{
+	"name": "vscode-mixer",
+	"description": "A VS Code language server that communicates with Mixer",
+	"version": "0.0.1",
+	"author": "Noel Bundick",
+	"license": "MIT",
+	"engines": {
+		"node": "*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/noelbundick/vscode-mixer"
+	},
+	"dependencies": {
+		"vscode-languageserver": "^4.1.2",
+		"beam-interactive-node2": "^2.8.4",
+		"ws": "^5.1.1"
+	},
+	"devDependencies": {
+		"@types/ws": "^5.1.1"
+	},
+	"scripts": {
+		"installServer": "installServerIntoExtension ../client ./package.json ./tsconfig.json",
+		"compile": "installServerIntoExtension ../client ./package.json ./tsconfig.json && tsc -p .",
+		"watch": "installServerIntoExtension ../client ./package.json ./tsconfig.json && tsc -w -p ."
+	}
+}

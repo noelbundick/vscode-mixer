@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1>vscode-mixer demo</h1>
+
+  <p>
+    Set <code>mixer.authToken</code> in your User Settings to <code>access_token</code>
+  </p>
+
+  <pre id="data">
+
+  </pre>
+
+  <script>
+    var data = window.location.hash
+      .replace(/#/g,'')
+      .replace(/[,]/g,'')
+      .replace(/=/g,': ')
+      .split('&')
+      .join('\n');
+    document.getElementById("data").innerHTML = data;
+  </script>
+</body>
+
+</html>
